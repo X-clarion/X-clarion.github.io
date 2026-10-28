@@ -2,7 +2,7 @@
 
 Personal portfolio website for Dilshod Ulugbekov, a Computer Systems Technician – Software Support student at Mohawk College (graduating December 2026), open to full-time and part-time roles in web development and IT support.
 
-**Live site:** https://YOUR-USERNAME.github.io
+**Live site:** https://X-clarion.github.io
 
 ## Sections
 - **Summarizing statement** – hero with headline, call-to-action buttons and quick facts
