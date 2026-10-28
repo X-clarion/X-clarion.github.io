@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dilshod Ulugbekov | Junior Web Developer &amp; IT Support</title>
+  <meta name="description" content="Portfolio of Dilshod Ulugbekov, a Computer Systems Technician – Software Support student at Mohawk College building practical websites with HTML, CSS, JavaScript and PHP.">
+  <meta name="author" content="Dilshod Ulugbekov">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Assignment notice (delete this block once the course has been marked) -->
+  <div class="notice" id="notice" role="note">
+    <p><strong>Heads up:</strong> this site was created as a course assignment at Mohawk College and may change after marking.</p>
+    <button class="notice__close" id="noticeClose" aria-label="Dismiss notice">&times;</button>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#top" class="nav__brand" aria-label="Back to top">
+        <span class="nav__logo" aria-hidden="true">DU</span>
+        <span class="nav__name">Dilshod Ulugbekov</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark theme">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO / SUMMARIZING STATEMENT ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__board" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow"><span class="status-dot"></span>Open to full-time &amp; part-time roles · Hamilton, ON</p>
+          <h1 id="hero-title">Hi, I'm Dilshod.<br><span class="accent">I build websites and fix what breaks.</span></h1>
+          <p class="hero__lead">
+            Junior web developer and IT support technician building practical, accessible websites with
+            <strong>HTML, CSS, JavaScript and PHP</strong> — backed by real experience helping users solve technical problems.
+          </p>
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">View my projects</a>
+            <a href="resume.pdf" class="btn btn--ghost" target="_blank" rel="noopener">Download resume</a>
+          </div>
+          <ul class="hero__facts">
+            <li><span class="fact__num">3</span><span class="fact__label">languages spoken</span></li>
+            <li><span class="fact__num">7</span><span class="fact__label">programming &amp; web languages</span></li>
+            <li><span class="fact__num">Dec&nbsp;2026</span><span class="fact__label">graduating, Mohawk College</span></li>
+          </ul>
+        </div>
+
+        <figure class="terminal" aria-label="Code snippet introducing Dilshod">
+          <div class="terminal__bar">
+            <span></span><span></span><span></span>
+            <p class="terminal__title">about-me.js</p>
+          </div>
+          <pre class="terminal__body"><code><span class="tk-k">const</span> <span class="tk-v">dilshod</span> = {
+  <span class="tk-p">role</span>: <span class="tk-s">"Junior Web Developer"</span>,
+  <span class="tk-p">alsoDoes</span>: <span class="tk-s">"IT Support"</span>,
+  <span class="tk-p">based</span>: <span class="tk-s">"Hamilton, ON"</span>,
+  <span class="tk-p">stack</span>: [<span class="tk-s">"HTML"</span>, <span class="tk-s">"CSS"</span>, <span class="tk-s">"JS"</span>, <span class="tk-s">"PHP"</span>],
+  <span class="tk-p">speaks</span>: [<span class="tk-s">"EN"</span>, <span class="tk-s">"RU"</span>, <span class="tk-s">"UZ"</span>],
+  <span class="tk-p">lookingFor</span>: <span class="tk-s">"full-time | part-time"</span>,
+};
+
+<span class="tk-v">dilshod</span>.<span class="tk-f">nextMove</span>(); <span class="tk-c">// your move ♞</span><span class="cursor" aria-hidden="true"></span></code></pre>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="section__head">
+          <p class="section__num">01 <span>· e4</span></p>
+          <h2 id="about-title">About me</h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__copy reveal">
+            <p>
+              I'm a <strong>Computer Systems Technician – Software Support</strong> student at Mohawk College, graduating in
+              December 2026. I enjoy the moment when a confusing problem finally makes sense — whether it's a website that
+              won't publish or a classroom projector that won't connect five minutes before a lecture.
+            </p>
+            <p>
+              Working on Mohawk's <strong>IT End User Computing &amp; Audio Visual</strong> team taught me that good technology
+              is technology people can actually use. That mindset shapes how I build websites: clean structure, clear
+              navigation and content that's easy to maintain.
+            </p>
+            <p>
+              I'm looking for <strong>full-time or part-time</strong> roles in web development, CMS and website maintenance,
+              or IT support — especially where I can grow my development skills while helping real users.
+            </p>
+          </div>
+          <aside class="about__card reveal" aria-label="Beyond the keyboard">
+            <h3>Beyond the keyboard</h3>
+            <ul class="interests">
+              <li>
+                <span class="interests__icon" aria-hidden="true">♞</span>
+                <div><strong>Competitive chess</strong><span>2 years — thinking a few moves ahead is a habit I bring to debugging.</span></div>
+              </li>
+              <li>
+                <span class="interests__icon" aria-hidden="true">≈</span>
+                <div><strong>Award-winning swimmer</strong><span>5 years of early-morning training taught me discipline and consistency.</span></div>
+              </li>
+              <li>
+                <span class="interests__icon" aria-hidden="true">✦</span>
+                <div><strong>Campus volunteer</strong><span>Orientation ambassador, Open House, Green Team and more at Mohawk.</span></div>
+              </li>
+              <li>
+                <span class="interests__icon" aria-hidden="true">Aa</span>
+                <div><strong>Multilingual</strong><span>English, Russian and Uzbek.</span></div>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section section--alt" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="section__num">02 <span>· Nf3</span></p>
+          <h2 id="education-title">Education</h2>
+        </div>
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__date">Sep 2024 – Dec 2026</div>
+            <div class="timeline__card">
+              <span class="badge badge--accent">In progress</span>
+              <h3>Computer Systems Technician – Software Support</h3>
+              <p class="timeline__org">Mohawk College · Hamilton, ON</p>
+              <p>Hands-on program covering web development, programming, software testing and technical communication.</p>
+              <ul class="tags" aria-label="Relevant coursework">
+                <li>Web: HTML, CSS, JavaScript, PHP</li>
+                <li>Python, Java, C#</li>
+                <li>Software testing</li>
+                <li>Technical writing</li>
+                <li>Version control &amp; code reviews</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <div class="timeline__date">Sep 2023 – Apr 2024</div>
+            <div class="timeline__card">
+              <span class="badge">Completed</span>
+              <h3>General Arts and Science (College Transfer)</h3>
+              <p class="timeline__org">Mohawk College · Hamilton, ON</p>
+              <p>Built a strong foundation in communication, critical thinking and advanced academic writing.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="section__num">03 <span>· Bc4</span></p>
+          <h2 id="skills-title">Skills</h2>
+          <p class="section__intro">Technologies I've used in coursework and projects, and the people skills I've built at work.</p>
+        </div>
+
+        <div class="skills__grid">
+          <article class="skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">&lt;/&gt;</div>
+            <h3>Web development</h3>
+            <ul class="chips">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>PHP</li><li>Responsive design</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">{ }</div>
+            <h3>Programming</h3>
+            <ul class="chips">
+              <li>Python</li><li>Java</li><li>C#</li><li>Debugging</li><li>Software testing</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">⌘</div>
+            <h3>Tools &amp; platforms</h3>
+            <ul class="chips">
+              <li>Git &amp; GitHub</li><li>GitHub Pages</li><li>WordPress</li><li>VS Code</li><li>Microsoft 365</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">⚙</div>
+            <h3>IT support</h3>
+            <ul class="chips">
+              <li>End-user computing</li><li>Troubleshooting</li><li>Audiovisual setup</li><li>Documentation</li><li>POS systems</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="soft reveal">
+          <h3 class="soft__title">Soft skills, with evidence</h3>
+          <div class="soft__grid">
+            <div class="soft__item">
+              <h4>Problem-solving</h4>
+              <p>Diagnosed a WordPress REST API publishing error by testing site and permalink settings until publishing worked again.</p>
+            </div>
+            <div class="soft__item">
+              <h4>Communication</h4>
+              <p>Explained technical fixes to students and staff in plain language on the IT End User Computing team.</p>
+            </div>
+            <div class="soft__item">
+              <h4>Teamwork under pressure</h4>
+              <p>Worked as scorer and statistician on Mohawk's Game Day Team, where accuracy matters in real time.</p>
+            </div>
+            <div class="soft__item">
+              <h4>Reliability</h4>
+              <p>Balanced studies with several part-time roles while keeping organized records and meeting deadlines.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section--alt" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="section__num">04 <span>· O-O</span></p>
+          <h2 id="projects-title">Projects</h2>
+          <p class="section__intro">A few projects that show how I approach a problem, build a solution and learn from it.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" data-filter="web" aria-pressed="false">Web</button>
+          <button class="filter" data-filter="js" aria-pressed="false">JavaScript</button>
+          <button class="filter" data-filter="cms" aria-pressed="false">CMS</button>
+        </div>
+
+        <div class="projects">
+          <!-- Project 1 -->
+          <article class="project reveal" data-tags="web js">
+            <div class="project__visual project__visual--tickets" aria-hidden="true">
+              <div class="mini-ticket"><span class="dot dot--high"></span>Projector not detected – Room F112</div>
+              <div class="mini-ticket"><span class="dot dot--med"></span>Wi-Fi drops on laptop</div>
+              <div class="mini-ticket is-done"><span class="dot dot--low"></span>Reset Microsoft 365 password</div>
+            </div>
+            <div class="project__body">
+              <p class="project__type">Passion project · 2026</p>
+              <h3>HelpDesk Lite – Ticket Tracker</h3>
+              <dl class="story">
+                <div><dt>Problem</dt><dd>On the IT support desk, quick requests were easy to lose between walk-ups, calls and emails.</dd></div>
+                <div><dt>Approach</dt><dd>Built a lightweight tracker to log tickets by priority and category, filter them and mark them resolved. Tickets are saved in the browser, so they survive a page refresh.</dd></div>
+                <div><dt>Learned</dt><dd>DOM manipulation, event delegation, form validation and working with <code>localStorage</code>.</dd></div>
+              </dl>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>localStorage</li></ul>
+              <div class="project__links">
+                <a href="#demo" class="btn btn--primary btn--sm">Try the live demo ↓</a>
+                <a href="https://github.com/YOUR-USERNAME/YOUR-USERNAME.github.io/blob/main/js/script.js" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">View code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project reveal" data-tags="cms web">
+            <div class="project__visual project__visual--wp" aria-hidden="true">
+              <div class="wp-mock">
+                <div class="wp-mock__bar"><span>Board Game Vault</span><i></i><i></i><i></i></div>
+                <div class="wp-mock__hero">Game Night · Fri 7 PM</div>
+                <div class="wp-mock__grid"><b></b><b></b><b></b></div>
+              </div>
+            </div>
+            <div class="project__body">
+              <p class="project__type">Academic project · Mohawk College</p>
+              <h3>Board Game Vault – WordPress Website</h3>
+              <dl class="story">
+                <div><dt>Problem</dt><dd>A board game community needed one place to share events, jobs, photos and directions.</dd></div>
+                <div><dt>Approach</dt><dd>Configured WordPress with a child theme and a custom page template, then built navigation and sections for a blog, events, a job board, a gallery and a schedule with a map.</dd></div>
+                <div><dt>Challenge</dt><dd>Publishing suddenly failed with a REST API error. I traced it through site and permalink settings, tested each change, and restored publishing.</dd></div>
+              </dl>
+              <ul class="tags"><li>WordPress</li><li>Child themes</li><li>PHP templates</li><li>REST API</li></ul>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project reveal" data-tags="web js">
+            <div class="project__visual project__visual--folio" aria-hidden="true">
+              <div class="folio-mock">
+                <span class="folio-mock__tag">&lt;index.html&gt;</span>
+                <span class="folio-mock__tag">&lt;styles.css&gt;</span>
+                <span class="folio-mock__tag">&lt;script.js&gt;</span>
+                <span class="folio-mock__ok">✓ deployed to GitHub Pages</span>
+              </div>
+            </div>
+            <div class="project__body">
+              <p class="project__type">Personal project · 2026</p>
+              <h3>This Portfolio Website</h3>
+              <dl class="story">
+                <div><dt>Problem</dt><dd>I needed one place where employers can see what I can build, not just read about it.</dd></div>
+                <div><dt>Approach</dt><dd>Hand-coded with no frameworks: semantic HTML, a CSS design system with light and dark themes, a responsive layout and small JavaScript features like project filters and scroll animations.</dd></div>
+                <div><dt>Learned</dt><dd>CSS custom properties, Grid and Flexbox, accessibility basics, and the Git workflow for publishing to GitHub Pages.</dd></div>
+              </dl>
+              <ul class="tags"><li>HTML</li><li>CSS Grid</li><li>JavaScript</li><li>Git</li><li>GitHub Pages</li></ul>
+              <div class="project__links">
+                <a href="https://github.com/YOUR-USERNAME/YOUR-USERNAME.github.io" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">View repository</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Live demo -->
+        <div class="demo reveal" id="demo">
+          <div class="demo__head">
+            <div>
+              <p class="project__type">Live demo</p>
+              <h3>HelpDesk Lite</h3>
+              <p class="demo__hint">Add a ticket, filter the queue, or click a ticket's checkbox to resolve it. Everything stays in your browser.</p>
+            </div>
+            <ul class="demo__stats" aria-live="polite">
+              <li><span id="statOpen">0</span> open</li>
+              <li><span id="statHigh">0</span> high priority</li>
+              <li><span id="statDone">0</span> resolved</li>
+            </ul>
+          </div>
+
+          <form class="demo__form" id="ticketForm" novalidate>
+            <div class="field field--grow">
+              <label for="ticketTitle">Issue</label>
+              <input id="ticketTitle" type="text" maxlength="70" placeholder="e.g. Printer in library is offline" required>
+            </div>
+            <div class="field">
+              <label for="ticketCat">Category</label>
+              <select id="ticketCat">
+                <option>Hardware</option>
+                <option>Software</option>
+                <option>Network</option>
+                <option>Account</option>
+                <option>Audio/Visual</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="ticketPri">Priority</label>
+              <select id="ticketPri">
+                <option value="low">Low</option>
+                <option value="med" selected>Medium</option>
+                <option value="high">High</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn--primary">Add ticket</button>
+            <p class="field__error" id="ticketError" role="alert"></p>
+          </form>
+
+          <div class="demo__toolbar">
+            <div class="filters filters--small" role="group" aria-label="Filter tickets">
+              <button class="filter is-active" data-view="all" aria-pressed="true">All</button>
+              <button class="filter" data-view="open" aria-pressed="false">Open</button>
+              <button class="filter" data-view="done" aria-pressed="false">Resolved</button>
+            </div>
+            <button class="link-btn" id="resetTickets">Reset demo</button>
+          </div>
+
+          <ul class="ticket-list" id="ticketList" aria-label="Tickets"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESUME ============ -->
+    <section class="section" id="resume" aria-labelledby="resume-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="section__num">05 <span>· Re1</span></p>
+          <h2 id="resume-title">Resume</h2>
+          <p class="section__intro">Highlights of my work experience. The full resume is available as a PDF.</p>
+        </div>
+
+        <div class="resume">
+          <div class="resume__list">
+            <article class="job reveal">
+              <div class="job__meta"><span>Jan 2026 – Apr 2026</span></div>
+              <h3>IT End User Computing &amp; Audio Visual</h3>
+              <p class="job__org">Mohawk College</p>
+              <p>Resolved technical and support requests from students and staff, kept organized records, and handled multiple requests efficiently.</p>
+            </article>
+            <article class="job reveal">
+              <div class="job__meta"><span>Sep 2025 – Apr 2026</span></div>
+              <h3>Events &amp; Communities Facilitator · Game Day Team</h3>
+              <p class="job__org">Mohawk College</p>
+              <p>Supported campus events and athletics as a scorer and statistician, set up event spaces and assisted guests in busy environments.</p>
+            </article>
+            <article class="job reveal">
+              <div class="job__meta"><span>May 2025 – Aug 2026</span></div>
+              <h3>Customer Service Roles</h3>
+              <p class="job__org">Subway · Shoppers Drug Mart</p>
+              <p>Delivered friendly, efficient service in fast-paced settings, resolved customer issues and worked closely with team members.</p>
+            </article>
+            <article class="job reveal">
+              <div class="job__meta"><span>Oct 2022 – Mar 2023</span></div>
+              <h3>Accounting Assistant</h3>
+              <p class="job__org">Centre for Digitalization · Tashkent, Uzbekistan</p>
+              <p>Prepared accounting documents and reports for the Chief Accountant and tracked tasks against deadlines.</p>
+            </article>
+          </div>
+
+          <aside class="resume__cta reveal">
+            <div class="doc-icon" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+              <b>PDF</b>
+            </div>
+            <h3>Full resume</h3>
+            <p>Education, experience, volunteer work and skills on one page.</p>
+            <a href="resume.pdf" class="btn btn--primary" target="_blank" rel="noopener">View resume</a>
+            <a href="resume.pdf" class="btn btn--ghost" download="Dilshod-Ulugbekov-Resume.pdf">Download PDF</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__inner">
+        <div class="section__head section__head--light">
+          <p class="section__num">06 <span>· Your move</span></p>
+          <h2 id="contact-title">Let's work together</h2>
+          <p class="section__intro">I'm available for full-time and part-time positions in web development, website maintenance and IT support. The fastest way to reach me is by email.</p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__links">
+            <a class="contact-link" id="emailLink" href="#contact" data-user="ulugbekovdilwod23" data-domain="gmail.com">
+              <span class="contact-link__icon" aria-hidden="true">✉</span>
+              <span><small>Email</small><span id="emailText">Click to reveal email</span></span>
+            </a>
+            <a class="contact-link" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">
+              <span class="contact-link__icon" aria-hidden="true">in</span>
+              <span><small>LinkedIn</small>Connect with me</span>
+            </a>
+            <a class="contact-link" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">
+              <span class="contact-link__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
+              </span>
+              <span><small>GitHub</small>See my repositories</span>
+            </a>
+          </div>
+
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="cName">Your name</label>
+              <input id="cName" type="text" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="cCompany">Company <span class="optional">(optional)</span></label>
+              <input id="cCompany" type="text" autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="cMsg">Message</label>
+              <textarea id="cMsg" rows="4" required placeholder="Tell me about the role or project…"></textarea>
+            </div>
+            <button type="submit" class="btn btn--light">Open in my email app</button>
+            <p class="field__error" id="contactError" role="alert"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Dilshod Ulugbekov · Hand-coded with HTML, CSS &amp; JavaScript · Hosted on GitHub Pages</p>
+      <a href="#top" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
